@@ -1,0 +1,139 @@
+.second-screen-container {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 62vh;
+}
+
+
+.fourth-screen-top-first-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    min-height: 220px;
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.fourth-screen-top-first-section>span {
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    border-radius: 3px;
+}
+
+.fourth-screen-top-first-section>span:hover {
+    color: #9603F2;
+    font-weight: 600;
+
+    border: 1px solid #9603F2;
+
+
+}
+
+
+.fourth-screen-top-second-section>h7 {
+    color: black;
+    font-size: 12px !important;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    display: block;
+}
+
+.single-radio-input {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-box:hover {
+    color: #9603F2;
+    border-color: #9603F2;
+}
+
+.third-screen-bottom {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.third-screen-bottom>button {
+    width: 90% !important;
+    border: none;
+    background-color: #9603F2;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+    height: 25vh;
+    /* background-color: #9603F2; */
+    overflow-y: scroll;
+    /* border-collapse: unset; */
+}
+
+.header-row {
+    background-color: #9603F2;
+    color: white;
+    /* padding: 0; */
+    margin: 0;
+}
+
+th {
+    margin: 0;
+    /* padding: 0; */
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #9603F2;
+}
+
+tr {
+    /* margin-top: 5px !important; */
+    max-height: 20px;
+}
+
+td {
+    font-size: 13px !important;
+    font-weight: 500;
+    /* margin-top: 15px; */
+}

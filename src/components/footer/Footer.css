@@ -1,0 +1,121 @@
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0eded2e;
+    padding: 10px 20px;
+    position: fixed;
+    width: 97.5%;
+    z-index: 1000;
+    background-color: white;
+    bottom: 0;
+    border-top: 2px solid rgba(240, 237, 237, 1);
+    /* border-top: 2px solid black; */
+    /* -webkit-box-shadow: 1px -10px 18px 8px rgba(240, 237, 237, 1); */
+    /* -moz-box-shadow: 1px -10px 18px 8px rgba(240, 237, 237, 1); */
+    /* box-shadow: 0px -4px 5px 4px black; */
+}
+
+.footer_left {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer_mic,
+.footer_video,
+.footer_screenshare,
+.footer_emoji,
+.footer_exit,
+.footer_graph,
+.footer_chat,
+.footer_participants,
+.footer_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+.footer_middle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer_exit {
+    background-color: red;
+    border: none;
+}
+
+.footer_right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.emoji_container {
+    position: absolute;
+    top: 27%;
+    right: 39%;
+}
+
+
+.dropdown-footer-menu {
+    position: absolute;
+    /* top: 200%; */
+    bottom: 130%;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    /* height: 70px; */
+    border-radius: 10px;
+    width: 100px;
+    right: 3%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* gap: 10px; */
+    flex-direction: column;
+
+}
+
+.dropdown-footer-menu>p {
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.logout {
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.dropdown-footer-menu>p:hover {
+    background-color: lightgray;
+}
+
+.recording-controls {
+    position: absolute;
+    top: -580px;
+    right: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 5%; */
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.recording-controls>span {
+    padding: 0 10px;
+    cursor: pointer;
+}

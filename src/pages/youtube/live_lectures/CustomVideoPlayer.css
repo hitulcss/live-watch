@@ -1,0 +1,31 @@
+/* CustomVideoPlayer.css */
+.custom-video-player {
+    position: relative;
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    width: 100px;
+    margin: 0 8px;
+}

@@ -1,0 +1,77 @@
+{
+  "name": "mediasoupreact",
+  "version": "1.2.3",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/joy": "^5.0.0-beta.36",
+    "@mui/material": "^5.15.10",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.10",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "emoji-picker-react": "^4.7.17",
+    "file-system": "^2.2.2",
+    "install": "^0.13.0",
+    "jwt-decode": "^4.0.0",
+    "mediasoup": "^3.13.19",
+    "mediasoup-client": "^3.7.2",
+    "npm": "^10.4.0",
+    "react": "^18.2.0",
+    "react-cache-buster": "^0.1.8",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "react-media-recorder": "^1.6.5",
+    "react-player": "^2.16.0",
+    "react-resizable": "^3.0.5",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "resizable-pip": "^0.1.1",
+    "screenfull": "^6.0.2",
+    "socket.io-client": "^4.7.4",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "prod": "npm run generate-meta-tag && npx env-cmd -f .env react-scripts start",
+    "dev": "npm run generate-meta-tag && npx env-cmd -f .env.development react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts generate-meta-tag && GENERATE_SOURCEMAP=false react-scripts build",
+    "generate-meta-tag": "node ./node_modules/react-cache-buster/dist/generate-meta-tag.js",
+    "deploy-dev": "aws s3 sync build/ s3://dev-twoway-frontend.sdcampus.com",
+    "deploy-stage": "npm run build && npm run deploy-dev",
+    "deploy": "aws s3 sync build/ s3://live-class",
+    "deploy-prod": "npm run build && npm run deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

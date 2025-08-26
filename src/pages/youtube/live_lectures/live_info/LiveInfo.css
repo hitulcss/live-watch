@@ -1,0 +1,12 @@
+.live_info_lower,
+.live_info_wrapper {
+  margin-top: 1.5rem;
+}
+
+.live_info_upper>h3 {
+  font-size: 1.6rem;
+}
+
+.live_info_wrapper>p {
+  color: var(--textGray);
+}

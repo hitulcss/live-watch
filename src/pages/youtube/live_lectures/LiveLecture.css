@@ -1,0 +1,298 @@
+.livelecture_wrapper {
+  padding: 1rem 0rem;
+  /* margin-top: 100px; */
+}
+
+.resources_container {
+  /* padding-top: 20px; */
+  /* box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); */
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  padding-bottom: 20px;
+  margin-top: -140px;
+}
+
+.live_video_player_container {
+  width: 100%;
+  height: 620px;
+  /* border-radius: 20px; */
+}
+
+.livelecture_container,
+.livelecture_upper {
+  width: 100%;
+}
+
+.lecture_title {
+  padding: 10px 0px 10px 0px;
+}
+
+.livelecture_upper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.live_left {
+  width: 80%;
+}
+
+.left_upper {
+  display: flex;
+  flex-direction: column;
+}
+
+.left_upper > img {
+  width: 98%;
+}
+
+.left_upper > p {
+  font-weight: 500;
+  color: var(--textGray);
+  margin-top: 1rem;
+}
+
+.left_upper > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.live_right {
+  width: 30%;
+  margin-top: 50px;
+  position: relative;
+  margin-right: 4rem;
+}
+
+.live_right_full {
+  width: 98%;
+  /* margin: 20px 20px; */
+  margin-top: 10px;
+  position: relative;
+}
+
+.live_comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  font-weight: 600;
+  background: #f4e6fe;
+  /* width: 100%; */
+  color: var(--secondaryColor);
+  border-radius: 10px 10px 0px 0px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.live_icon {
+  font-size: 20px;
+}
+
+.chat-box {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.inner_chat {
+  padding: 15px;
+}
+
+.live_dpp {
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 1.5rem;
+  width: 98%;
+}
+
+.live_dpp_title {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.live_dpp_pdf {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.recorded_dpp {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.dpp_notes_download {
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  gap: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 600;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+.pdf_name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dpp_notes_download img {
+  width: 1.5rem;
+}
+
+.inner_chat_lower {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chat_input_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.chat_input_box > input {
+  width: 96%;
+  height: 100%;
+  padding: 8px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.send_icon {
+  font-size: 22px;
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
+
+.custom-player {
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+  width: 100%;
+  height: 100%;
+}
+
+.ytp-title-text {
+  display: none !important;
+}
+
+.ytp-title-link {
+  font-size: 0px !important;
+}
+
+.video_tag {
+  width: fit-content;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 4px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.4);
+  position: absolute;
+  top: 4%;
+  left: 2%;
+}
+
+@media (max-width: 768px) {
+  .livelecture_upper {
+    flex-direction: column;
+  }
+
+  .live_right,
+  .live_left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .live_dpp_pdf {
+    flex-direction: column;
+  }
+
+  .left_upper > h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* gap: 10px; */
+  padding: 0;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list > li {
+  /* margin-left: 10px; */
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.from-to-box {
+  /* position: absolute; */
+  /* font-size: 12px; */
+  /* top: 0px; */
+  width: 100%;
+  overflow-x: hidden;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  text-overflow: ellipsis;
+}
+
+.msg-box-youtube {
+  border-radius: 0px 8px 8px 8px !important;
+  padding: 0px 10px;
+  /* min-height: 60px; */
+  width: fit-content !important;
+  text-align: start;
+  min-width: 200px;
+}
+
+.css-ffwiic-MuiStack-root {
+  margin-bottom: 0px !important;
+}

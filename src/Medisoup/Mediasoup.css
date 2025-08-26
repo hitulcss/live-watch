@@ -1,0 +1,211 @@
+.two_way_container {
+
+    /* margin-top: 40px; */
+}
+
+
+.video_ui_container {
+    flex: 3;
+}
+
+/* .chat_container {
+    flex: 1;
+} */
+
+/* .video_ui_container {
+    flex: 3;
+} */
+
+.video {
+
+    /* width: 400px !important; */
+    height: 87vh;
+    width: 100% !important;
+}
+
+#localVideoContainer {
+    /* position: relative; */
+    width: 100%;
+
+}
+
+.host-tag {
+    position: absolute;
+    color: #ffffff8f;
+    font-weight: 600;
+    padding: 2px 5px;
+    font-size: 14px;
+    background-color: #80808073;
+    border-radius: 5px;
+    right: 8%;
+    top: 8%;
+}
+
+#localVideo {
+    /* height: 100vh; */
+    /* width: 90% !important; */
+    /* border-radius: 10px; */
+    min-width: 50%;
+    /* min-height: 100%; */
+    /* margin-top: 20px; */
+    object-fit: fill;
+
+    /* flex: 1; */
+}
+
+#videoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* height: 90vh !important; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 20px; */
+    /* bottom: -200px; */
+    padding: 0 0px;
+    /* gap: 10px !important; */
+    margin-right: 20px;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+
+.chat_button {
+    position: absolute;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+}
+
+.remoteVideo {
+    border-radius: 20px !important;
+    /* overflow: hidden; */
+    width: 700px;
+    /* background-color: aqua; */
+    /* width: 490px; */
+}
+
+
+
+.remoteVideo>.video {
+    /* background-color: blueviolet; */
+    /* max-height: 500px; */
+    /* height: 275px !important; */
+    /* width: 100% !important; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* width: 100% !important; */
+    /* flex: 1; */
+    margin-right: 10px;
+    border-radius: 20px !important;
+    overflow: hidden;
+    z-index: 999;
+    /* object-fit: fill; */
+    border-radius: 20px;
+}
+
+.remoteVideo>.video-user {
+    /* background-color: blueviolet; */
+    max-height: 600px;
+    height: 426px !important;
+    width: 700px;
+    /* width: 100% !important; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* width: 100% !important; */
+    /* flex: 1; */
+    /* margin-right: 10px; */
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 999;
+    /* object-fit: fill; */
+    border-radius: 20px !important;
+}
+
+.remoteVideo>.video-host {
+    max-height: 1200px !important;
+    height: 600px !important;
+    width: 100% !important;
+    object-fit: fill;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* .users_feed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+} */
+
+/* #videoContainer div {
+    background-color: brown;
+} */
+
+/* .remoteVideo {
+    background-color: red;
+} */
+
+/* .remoteVideo {
+    border-radius: 10px !important;
+} */
+
+.permission-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    /* -webkit-box-shadow: 1px -10px 18px 8px rgba(240, 237, 237, 1);
+    -moz-box-shadow: 1px -10px 18px 8px rgba(240, 237, 237, 1);
+    box-shadow: 1px -10px 18px 8px rgba(240, 237, 237, 1); */
+}
+
+.permission-box h6 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.permission-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.permission-buttons button {
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 70px;
+    color: white;
+    font-weight: bold;
+    /* background-color: aquamarine; */
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.permission-buttons button:hover {
+    /* height: 45px; */
+    translate: 0px -10px;
+}

@@ -1,0 +1,14 @@
+.player_bottom_controls {
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.player_bottom_controls>span>button {
+    color: #fff;
+    margin-right: 2px;
+}
+
+.player_bottom_controls>span>button:hover {
+    color: #fff;
+    margin-right: 2px;
+}
